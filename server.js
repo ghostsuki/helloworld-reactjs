@@ -25,3 +25,5 @@ app.use('/api/relatorios', relatoriosRouter);
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta http://localhost:${PORT}`);
 });
+
+// comentário para primeiro teste do pipeline de CI
