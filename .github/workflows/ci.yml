@@ -1,0 +1,28 @@
+# Arquivo .github/workflows/ci.yml ADAPTADO para o projeto Node.js
+
+name: CI Backend Mercado Sistema
+
+on:
+  pull_request:
+    branches:
+      - main
+      - development
+
+jobs:
+  install-dependencies:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Passo 1: Baixa o código do repositório
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      # Passo 2: Configura a versão do Node.js
+      - name: Configura Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Verifique se esta é a versão que você usa
+
+      # Passo 3: Instala as dependências
+      - name: Instala dependências
+        run: npm install

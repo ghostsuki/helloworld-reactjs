@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos - Mercado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="produtos.html">Produtos</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="fornecedores.html">Fornecedores</a>
+            <a href="vendas.html">Vendas</a>
+            <a href="relatorios.html">Relatórios</a>
+        </nav>
+        
+        <h1>Gerenciamento de Produtos</h1>
+
+        <form id="form-produto">
+            <input type="hidden" id="produto-id">
+            <input type="text" id="nome-produto" placeholder="Nome do Produto" required>
+            <input type="number" id="preco-venda" step="0.01" placeholder="Preço (R$)" required>
+            <input type="number" id="estoque" placeholder="Estoque" required>
+            <select id="select-fornecedor">
+                <option value="">Sem Fornecedor</option>
+                </select>
+            <button type="submit">Salvar</button>
+        </form>
+
+        <h2>Lista de Produtos</h2>
+        <table id="tabela-produtos">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                    <th>Fornecedor</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Vendas - Mercado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="produtos.html">Produtos</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="fornecedores.html">Fornecedores</a>
+            <a href="vendas.html">Vendas</a>
+            <a href="relatorios.html">Relatórios</a>
+        </nav>
+        
+        <h1>Registro de Nova Venda</h1>
+
+        <div id="painel-venda">
+            <div class="form-venda-secao">
+                <div class="campo-venda">
+                    <label for="select-cliente-venda">Cliente:</label>
+                    <select id="select-cliente-venda">
+                        <option value="">Consumidor não identificado</option>
+                    </select>
+                </div>
+                <div class="campo-venda">
+                    <label for="select-produto-venda">Adicionar Produto:</label>
+                    <select id="select-produto-venda">
+                        <option value="">Selecione um produto</option>
+                    </select>
+                </div>
+                <div class="campo-venda">
+                    <label for="quantidade-produto">Quantidade:</label>
+                    <input type="number" id="quantidade-produto" value="1" min="1">
+                </div>
+                <button id="btn-add-produto" class="btn-adicionar">Adicionar</button>
+            </div>
+
+            <h2>Itens da Venda</h2>
+            <table id="tabela-itens-venda">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Qtd.</th>
+                        <th>Preço Unit.</th>
+                        <th>Subtotal</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+
+            <div class="total-venda">
+                <h2>Total: R$ <span id="valor-total-venda">0.00</span></h2>
+                <button id="btn-finalizar-venda" class="btn-sucesso">Finalizar Venda</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

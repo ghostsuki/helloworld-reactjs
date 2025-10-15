@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Relatório de Vendas - Mercado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="produtos.html">Produtos</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="fornecedores.html">Fornecedores</a>
+            <a href="vendas.html">Vendas</a>
+            <a href="relatorios.html">Relatórios</a>
+        </nav>
+        
+        <h1>Relatório de Vendas</h1>
+
+        <div id="painel-relatorio">
+            <div class="filtros-relatorio">
+                <button class="btn-filtro" data-periodo="dia">Hoje</button>
+                <button class="btn-filtro" data-periodo="semana">Esta Semana</button>
+                <button class="btn-filtro" data-periodo="mes">Este Mês</button>
+            </div>
+
+            <h2 id="titulo-relatorio">Vendas de Hoje</h2>
+            <table id="tabela-relatorio">
+                <thead>
+                    <tr>
+                        <th>ID Venda</th>
+                        <th>Cliente</th>
+                        <th>Data e Hora</th>
+                        <th>Valor Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

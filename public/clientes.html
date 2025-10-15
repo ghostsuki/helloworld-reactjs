@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Clientes - Mercado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="produtos.html">Produtos</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="fornecedores.html">Fornecedores</a> 
+            <a href="vendas.html">Vendas</a>   
+            <a href="relatorios.html">Relatórios</a> 
+        </nav>
+        
+        <h1>Gerenciamento de Clientes</h1>
+
+        <form id="form-cliente">
+            <input type="hidden" id="cliente-id">
+            <input type="text" id="nome-cliente" placeholder="Nome do Cliente" required>
+            <input type="text" id="cpf-cliente" placeholder="CPF">
+            <input type="text" id="telefone-cliente" placeholder="Telefone">
+            <input type="email" id="email-cliente" placeholder="E-mail">
+            <button type="submit">Salvar</button>
+        </form>
+
+        <h2>Lista de Clientes</h2>
+        <table id="tabela-clientes">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Telefone</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                </tbody>
+        </table>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
