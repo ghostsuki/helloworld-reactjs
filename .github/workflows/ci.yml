@@ -1,5 +1,3 @@
-# Arquivo .github/workflows/ci.yml ADAPTADO para o projeto Node.js
-
 name: CI Backend Mercado Sistema
 
 on:
