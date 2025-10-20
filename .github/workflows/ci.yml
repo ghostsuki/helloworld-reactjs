@@ -26,3 +26,7 @@ jobs:
       # Passo 3: Instala as dependências
       - name: Instala dependências
         run: npm install
+
+      - name: Executa testes
+        run: npm test
+ 
